@@ -1,0 +1,28 @@
+$baseFontFamily: Muli;
+@import url(http://fonts.googleapis.com/css?family=muli);
+
+$navbarBackgroundHighlight: yellow;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+
+	margin-top: 50px;
+	color: $black;
+	a {
+		color: $black;
+	}
+}
+
+.header {
+	color: $black;
+	a{
+		color:$black;
+	}
+}
