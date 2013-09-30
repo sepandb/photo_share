@@ -7,3 +7,9 @@ We is currently at <%= @users.count %> rings.
 <% @users.count.times do %>
 	<%= image_tag "http://upload.wikimedia.org/wikipedia/commons/f/f7/NBA_Trophy2.png", :width => '100' %>
 <% end %>
+
+<br/>
+
+<% if @users.count == 6%>
+	You are on par with <%= image_tag "http://spreegoogs.com/wp-content/uploads/2011/05/michael-jordan-rings.jpg" %>
+<% end %>
