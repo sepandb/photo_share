@@ -8,10 +8,26 @@ We is currently at <%= @users.count %> rings.
 	<%= image_tag "http://upload.wikimedia.org/wikipedia/commons/f/f7/NBA_Trophy2.png", :width => '100' %>
 <% end %>
 
-<% if @users.count == 6%>
-	<div class="hero-unit">
-		
-			You are on par with <%= image_tag "http://spreegoogs.com/wp-content/uploads/2011/05/michael-jordan-rings.jpg" %>
-		
-	</div>
+
+<% case @users.count %>
+<% when 0%>
+		<div class="hero-unit">
+			
+				You are on par with <%= image_tag "http://www.abload.de/img/lbj3nnzg.jpg" %>
+			
+		</div>
+
+<% when 6%>
+		<div class="hero-unit">
+			
+				You are on par with <%= image_tag "http://spreegoogs.com/wp-content/uploads/2011/05/michael-jordan-rings.jpg" %>
+			
+		</div>
+<% when 5%>	
+			<div class="hero-unit">
+			
+				You are on par with <%= image_tag "http://3.bp.blogspot.com/_f2WXrrHEif0/TVCcyPY741I/AAAAAAAAAB0/ROzukrsUf_Q/s1600/kobe-rings.jpg" %>
+			
+		</div>
+
 <% end %>
