@@ -8,6 +8,9 @@
 		 <p>
 		  <%= @pin.user.name %>
 		 </p>
+		 <p>
+		 	<%= @pin.created_at %> 
+		 </p>
 
 		 <% if current_user == @pin.user %>
 		  <%= link_to 'Edit', edit_pin_path(@pin) %> |

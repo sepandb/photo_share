@@ -2,6 +2,7 @@
 	<%= link_to (image_tag pin.image(:medium)), pin %>
 	<p class="description">
 		<%= pin.description %>
+		 	<%= pin.created_at.in_time_zone("EST") %> 
 	</p>
 	<p>
 		<strong>
